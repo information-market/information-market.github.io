@@ -1,0 +1,119 @@
+
+body{font-family: 'Slabo 27px', sans-serif;font-size:15px}
+body b{font-family: 'Slabo 27px', sans-serif;color:#2477C4;font-weight:400}
+
+
+
+
+.all-title.text-center > h2 {
+  color: #4278ab;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 42px;
+  padding-bottom: 15px;
+  padding-top: 30px;
+  position: relative;
+  font-family: 'Slabo 27px', sans-serif;
+}
+
+.all-title.text-center > h2::after {
+  background: #4278ab none repeat scroll 0 0;
+  bottom: 10px;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -60px;
+  position: absolute;
+  width: 120px;
+}
+
+.title-para h5 {
+ font-size: 18px;
+line-height: 23px;
+text-align: justify;
+
+}
+
+.all-des li {
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.label-primary {
+  background-color: #4278ab;
+  font-size: 12px !important;
+  padding: 2px 5px !important;
+}
+
+.all-des a {
+  color: #4278ab;
+  font-size: 15px !important;
+}
+
+.all-des b {
+  color: #4278ab;
+font-family: "Slabo 27px",sans-serif;
+font-size: 15px;
+font-weight: 400;
+}
+
+.footer-des > h5 {
+  line-height: 27px;
+  text-align: center;
+}
+
+
+.footer-des a:hover {
+  color: #4278ab;
+}
+
+.collapse.navbar-collapse ul.nav.navbar-nav {
+  float: right;
+}
+
+.collapse.navbar-collapse ul.nav.navbar-nav li {
+  padding: 4px 14px;
+}
+.collapse.navbar-collapse ul.nav.navbar-nav li a {
+  color: #fff;
+}
+
+h2, .h2 {
+  color: #4278ab;
+  font-size: 50px;
+}
+
+
+
+
+
+
+.navbar.navbar-fixed-top.navbar-inverse {
+  background-color: #4278ab;
+}
+
+
+.navbar-header a.navbar-brand {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+
+@media (max-width: 800px) { 
+
+#myCarousel {
+        display:none !important;
+    }
+ 
+.collapse.navbar-collapse ul.nav.navbar-nav {
+  float: left;
+}  
+
+.navbar-brand {
+  opacity: 0;
+}
+ 
+}
