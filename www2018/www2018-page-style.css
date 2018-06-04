@@ -17,17 +17,6 @@ body b{font-family: 'Slabo 27px', sans-serif;color:#2477C4;font-weight:400}
   font-family: 'Slabo 27px', sans-serif;
 }
 
-.all-title.text-center > h2::after {
-  background: #4278ab none repeat scroll 0 0;
-  bottom: 10px;
-  content: "";
-  height: 2px;
-  left: 50%;
-  margin-left: -60px;
-  position: absolute;
-  width: 240px;
-}
-
 .title-para h5 {
  font-size: 18px;
 line-height: 23px;
