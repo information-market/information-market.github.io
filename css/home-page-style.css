@@ -121,7 +121,7 @@ h2, .h2 {
 //This is for news panel
 .glyphicon
 {
-    margin-right:4px !important; /*override*/
+    margin-right:10px !important; /*override*/
 }
 
 .pagination .glyphicon
