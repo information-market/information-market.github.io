@@ -1,25 +1,71 @@
-<blockquote>
-<p style="text-align:left"><strong>Why did Yahoo Answers fail? Why is Stack Overflow declining? Will Quora survive in 2020? </strong></p>
-</blockquote>
-Till date, the sustainability of&nbsp;community question answering (CQA)&nbsp;platforms has been an unsolved mystery. In our recent&nbsp;<a href="https://arxiv.org/pdf/1712.00139.pdf" target="_blank">paper</a>&nbsp;at&nbsp;<a href="https://www2018.thewebconf.org/" target="_blank">the Web conference</a>, we&nbsp;investigate&nbsp;CQA sustainability&nbsp;from an economic perspective–providing&nbsp;insights on their successes and failures through an interpretable model.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="ico/Info_Icon.ico">
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,700" rel="stylesheet" type="text/css">
+	
+	<title>Information Market</title>
 
-Our key&nbsp;idea is to interpret&nbsp;CQA platforms as <em>markets</em>, where participants exchange knowledge. We used this “knowledge market” perspective&nbsp;to analyze the&nbsp;question answering sites on&nbsp;<a href="https://stackexchange.com/">StackExchange</a>,&nbsp;and&nbsp;showed&nbsp;that the content generation in StackExchanges can be captured through&nbsp;<a href="https://en.wikipedia.org/wiki/Cobb%E2%80%93Douglas_production_function">Cobb-Douglas</a> model–a production model from&nbsp;Economics.&nbsp;Our model provides&nbsp;intuitive explanation for the successes and failures of knowledge markets through the concept of <a href="https://www.investopedia.com/terms/d/diseconomiesofscale.asp">economies and diseconomies</a>.
+	<!-- Bootstrap core CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" type="text/css">
 
-<a href="http://humancomputation.com/blog/wp-content/uploads/2018/05/Size_vs_Diseconomies_with_Title.png"><img alt="size_vs_diseconomies_with_title" src="http://humancomputation.com/blog/wp-content/uploads/2018/05/Size_vs_Diseconomies_with_Title.png" style="width:100%;max-width:1200px"></a>
-<strong>Figure 1:</strong> Cobb-Douglas model predicts&nbsp;<em>diseconomies (economies) of scale</em>–whether the ratio of answers to questions will decline (increase) with the increase in number of users.
-<h3>Modelling Content Generation in Knowledge Markets</h3>
-In a knowledge market, users generate different types of contents such as questions, answers and comments. These contents have dependency, e.g., answers depends on questions, and comments depend on questions and answers. We combine&nbsp;user participation and content dependency to model content generation in knowledge markets.&nbsp;To this end, we use&nbsp;<a href="https://en.wikipedia.org/wiki/Production_function"><em>production functions</em></a>, which are a natural way to model output in a market.&nbsp;These functions&nbsp;involve two components, a basis function (Figure 2) and an interaction type (Figure 3). We consider three possible basis: exponential, power, and sigmoid; and four possible interaction types: essential, interactive essential, antagonistic, and substitutable. Considering these choices, we found that the combination of <em>power basis</em> and <em>interactive essential interaction</em> provides the best fit to our dataset for all<em>&nbsp;</em>StackExchanges. In economics, this combination&nbsp;is known as the Cobb-Douglas model.
+	
 
-<a href="http://humancomputation.com/blog/wp-content/uploads/2018/05/All_Basis.png"><img alt="Three Basis Functions" src="http://humancomputation.com/blog/wp-content/uploads/2018/05/All_Basis.png" style="width:75%;max-width:900px"></a>
-<strong>Figure 2:</strong> A basis function captures the relationship between an input and output, e.g., how the number of questions affect the number of answers.
+	<!-- Custom styles for this template -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/hover-min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/offcanvas.css" rel="stylesheet">
+	<link href="css/ap.css" rel="stylesheet">
+	
+	<style>
+	.carousel {
+		background: #2f4350;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+		width: 60%;
+		height: 400px;
+		margin: auto;
+	}
+	</style>
+</head>
 
-<a href="http://humancomputation.com/blog/wp-content/uploads/2018/05/All_Interaction.png"><img alt="Four Interaction Types" src="http://humancomputation.com/blog/wp-content/uploads/2018/05/All_Interaction.png" style="width:100%;max-width:1200px"></a>
-<strong>Figure 3:</strong> An interaction types capture how different inputs interact to produce an output, e.g., how the number of questions and number of answerers interact to generate number of answers.
-<h3>Key Findings</h3>
-Our&nbsp;model&nbsp;asserts that, for most&nbsp;StackExchanges, the&nbsp;aggregate&nbsp;user behavior changes with the size of user community. Figure 4 shows&nbsp;how&nbsp;answering behavior in ANDROID StackExchange changes with community size. Specifically, as the community grows, the users who join more recently are likely to contribute fewer answers compared to those who joined at an early stage. This phenomena is true for most StackExchanges, with varying strength. The larger communities tend to behave similar to ANDROID. Now, why do we observe such size dependent distribution of user behavior? It turns out, in StackExchanges, there’s a core group of users who substantially contribute answers for a long period. The size of this core does not&nbsp;grow&nbsp;in proportion to the community size, which causes the <em>size dependent distribution</em>,&nbsp;which in turn causes <em>diseconomies</em>–ratio of answer to question declines with the increase in community size.
+<body>
+    <blockquote>
+    <p style="text-align:left"><strong>Why did Yahoo Answers fail? Why is Stack Overflow declining? Will Quora survive in 2020? </strong></p>
+    </blockquote>
+    Till date, the sustainability of&nbsp;community question answering (CQA)&nbsp;platforms has been an unsolved mystery. In our recent&nbsp;<a href="https://arxiv.org/pdf/1712.00139.pdf" target="_blank">paper</a>&nbsp;at&nbsp;<a href="https://www2018.thewebconf.org/" target="_blank">the Web conference</a>, we&nbsp;investigate&nbsp;CQA sustainability&nbsp;from an economic perspective–providing&nbsp;insights on their successes and failures through an interpretable model.
 
-<a href="http://humancomputation.com/blog/wp-content/uploads/2018/05/Android_SDD.png"><img alt="android_sdd" src="http://humancomputation.com/blog/wp-content/uploads/2018/05/Android_SDD.png" style="width:100%;max-width:1200px"></a>
-<strong>Figure 4:</strong> Size dependent distribution of user behavior in ANDROID community.
+    Our key&nbsp;idea is to interpret&nbsp;CQA platforms as <em>markets</em>, where participants exchange knowledge. We used this “knowledge market” perspective&nbsp;to analyze the&nbsp;question answering sites on&nbsp;<a href="https://stackexchange.com/">StackExchange</a>,&nbsp;and&nbsp;showed&nbsp;that the content generation in StackExchanges can be captured through&nbsp;<a href="https://en.wikipedia.org/wiki/Cobb%E2%80%93Douglas_production_function">Cobb-Douglas</a> model–a production model from&nbsp;Economics.&nbsp;Our model provides&nbsp;intuitive explanation for the successes and failures of knowledge markets through the concept of <a href="https://www.investopedia.com/terms/d/diseconomiesofscale.asp">economies and diseconomies</a>.
 
-<em>For more, see our <a href="https://arxiv.org/pdf/1712.00139.pdf">full paper</a>.</em>
-<em><small><a href="https://sites.google.com/site/himeldevportfolio/home" target="_blank">Himel Dev</a>,&nbsp;University of Illinois at Urbana–Champaign</small></em>
+    <a href="http://humancomputation.com/blog/wp-content/uploads/2018/05/Size_vs_Diseconomies_with_Title.png"><img alt="size_vs_diseconomies_with_title" src="http://humancomputation.com/blog/wp-content/uploads/2018/05/Size_vs_Diseconomies_with_Title.png" style="width:100%;max-width:1200px"></a>
+    <strong>Figure 1:</strong> Cobb-Douglas model predicts&nbsp;<em>diseconomies (economies) of scale</em>–whether the ratio of answers to questions will decline (increase) with the increase in number of users.
+    <h3>Modelling Content Generation in Knowledge Markets</h3>
+    In a knowledge market, users generate different types of contents such as questions, answers and comments. These contents have dependency, e.g., answers depends on questions, and comments depend on questions and answers. We combine&nbsp;user participation and content dependency to model content generation in knowledge markets.&nbsp;To this end, we use&nbsp;<a href="https://en.wikipedia.org/wiki/Production_function"><em>production functions</em></a>, which are a natural way to model output in a market.&nbsp;These functions&nbsp;involve two components, a basis function (Figure 2) and an interaction type (Figure 3). We consider three possible basis: exponential, power, and sigmoid; and four possible interaction types: essential, interactive essential, antagonistic, and substitutable. Considering these choices, we found that the combination of <em>power basis</em> and <em>interactive essential interaction</em> provides the best fit to our dataset for all<em>&nbsp;</em>StackExchanges. In economics, this combination&nbsp;is known as the Cobb-Douglas model.
+
+    <a href="http://humancomputation.com/blog/wp-content/uploads/2018/05/All_Basis.png"><img alt="Three Basis Functions" src="http://humancomputation.com/blog/wp-content/uploads/2018/05/All_Basis.png" style="width:75%;max-width:900px"></a>
+    <strong>Figure 2:</strong> A basis function captures the relationship between an input and output, e.g., how the number of questions affect the number of answers.
+
+    <a href="http://humancomputation.com/blog/wp-content/uploads/2018/05/All_Interaction.png"><img alt="Four Interaction Types" src="http://humancomputation.com/blog/wp-content/uploads/2018/05/All_Interaction.png" style="width:100%;max-width:1200px"></a>
+    <strong>Figure 3:</strong> An interaction types capture how different inputs interact to produce an output, e.g., how the number of questions and number of answerers interact to generate number of answers.
+    <h3>Key Findings</h3>
+    Our&nbsp;model&nbsp;asserts that, for most&nbsp;StackExchanges, the&nbsp;aggregate&nbsp;user behavior changes with the size of user community. Figure 4 shows&nbsp;how&nbsp;answering behavior in ANDROID StackExchange changes with community size. Specifically, as the community grows, the users who join more recently are likely to contribute fewer answers compared to those who joined at an early stage. This phenomena is true for most StackExchanges, with varying strength. The larger communities tend to behave similar to ANDROID. Now, why do we observe such size dependent distribution of user behavior? It turns out, in StackExchanges, there’s a core group of users who substantially contribute answers for a long period. The size of this core does not&nbsp;grow&nbsp;in proportion to the community size, which causes the <em>size dependent distribution</em>,&nbsp;which in turn causes <em>diseconomies</em>–ratio of answer to question declines with the increase in community size.
+
+    <a href="http://humancomputation.com/blog/wp-content/uploads/2018/05/Android_SDD.png"><img alt="android_sdd" src="http://humancomputation.com/blog/wp-content/uploads/2018/05/Android_SDD.png" style="width:100%;max-width:1200px"></a>
+    <strong>Figure 4:</strong> Size dependent distribution of user behavior in ANDROID community.
+
+    <em>For more, see our <a href="https://arxiv.org/pdf/1712.00139.pdf">full paper</a>.</em>
+    <em><small><a href="https://sites.google.com/site/himeldevportfolio/home" target="_blank">Himel Dev</a>,&nbsp;University of Illinois at Urbana–Champaign</small></em>
+</body>
