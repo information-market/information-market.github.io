@@ -83,19 +83,17 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>The Size Conundrum: Why Online Knowledge Markets Can Fail at Scale</h2>
-                <div class="all-title text-center">
-                    <h2>KNOWLEDGE MARKET</h2>
-                </div>           
+                <h1>Knowledge Market</h1>         
                 <div class="title-para">
                     <h5><blockquote><strong>Why did Yahoo Answers fail? Why is Stack Overflow declining? Will Quora survive in 2020? </strong></blockquote>
-                    When are community question answering websites like StackExchange, sustainable? In our recent <a href="https://arxiv.org/pdf/1712.00139.pdf" target="_blank">paper</a> at <a href="https://www2018.thewebconf.org/" target="_blank">the Web conference</a>, we investigate CQA sustainability from an economic perspective–providing insights on their successes and failures through an interpretable model. 
+                    When are community question answering (CQA) platforms like StackExchange, sustainable? In our recent <a href="https://arxiv.org/pdf/1712.00139.pdf" target="_blank">paper</a> at <a href="https://www2018.thewebconf.org/" target="_blank">the Web conference</a>, we investigate CQA sustainability from an economic perspective–providing insights on their successes and failures through an interpretable model. 
                     <br><br>
                     Our key idea is to interpret CQA platforms as <em>markets</em>, where participants exchange knowledge. We used this “knowledge market” perspective to analyze the question answering sites on <a href="https://stackexchange.com/">StackExchange</a>, and showed that the content generation in StackExchanges can be captured through <a href="https://en.wikipedia.org/wiki/Cobb%E2%80%93Douglas_production_function">Cobb-Douglas</a> model–a production model from Economics. Our model provides intuitive explanation for the successes and failures of knowledge markets through the concept of <a href="https://www.investopedia.com/terms/d/diseconomiesofscale.asp">economies and diseconomies</a>.</h5>
                     <br>
                     <figure class="figure">
                         <img src="../images/Size_vs_Diseconomies_with_Title.png" class="center-block" width="75%" alt="Missing figure for diseconomies of scale.">
                         <br>
-                        <figcaption><h5><strong>Figure 1:</strong> Cobb-Douglas model predicts <em>diseconomies (economies) of scale</em>–whether the ratio of answers to questions will decline (increase) with the increase in number of users. Most StackExchanges exhibit diseconomies of scale. Examples: strong diseconomies—superuser; weak economies—puzzling; and strong economies—cstheory.</h5></figcaption>
+                        <figcaption><h5><strong>Figure 1:</strong> Cobb-Douglas model predicts <em>diseconomies (economies) of scale</em>–whether the ratio of answers to questions will decline (increase) with the increase in number of users. From left to right: SUPERUSER (strong diseconomies), PUZZLING (weak economies), and CSTHEORY (strong economies). Most StackExchanges exhibit diseconomies of scale, similar to SUPERUSER.</h5></figcaption>
                     </figure>                   
                 </div>
             </div>
@@ -103,9 +101,7 @@
         
         <div class="row">
             <div class="col-md-12">
-                <div class="all-title text-center">
-                    <h2>MODELLING CONTENT GENERATION IN KNOWLEDGE MARKETS</h2>
-                </div>
+                <h1>Modeling Content Generation in Knowledge Market</h1>
                 <div class="title-para">
                     <h5>In a knowledge market, users generate different types of content such as questions, answers and comments. Content in these markets exhibit dependencies, e.g., answers depends on questions, and comments depend on questions and answers. We combine user participation and content dependency to model content generation in knowledge markets. To this end, we use <a href="https://en.wikipedia.org/wiki/Production_function"><em>production functions</em></a>, which are a natural way to model output in a market. These functions involve two components, a basis function (Figure 2) and an interaction type (Figure 3). We consider three possible basis: exponential, power, and sigmoid; and four possible interaction types: essential, interactive essential, antagonistic, and substitutable. Considering these choices, we found that the combination of <em>power basis</em> and <em>interactive essential interaction</em> provides the best fit to our dataset for all StackExchanges. In economics, this combination is known as the Cobb-Douglas model.</h5>
                     <br>
@@ -126,16 +122,14 @@
         
         <div class="row">
             <div class="col-md-12">
-                <div class="all-title text-center">
-                    <h2>KEY FINDINGS</h2>
-                </div>
+                <h1>Key Findings</h1>
                 <div class="title-para">
                     <h5>Our model asserts that, for most StackExchanges, the aggregate user behavior changes with the size of user community. Figure 4 shows how answering behavior in ANDROID StackExchange changes with community size. Specifically, as the community grows, the users who join more recently are likely to contribute fewer answers compared to those who joined at an early stage. This phenomena is true for most StackExchanges, with varying strength. The larger communities tend to behave similar to ANDROID. Now, why do we observe such size dependent distribution of user behavior? It turns out, in StackExchanges, there’s a core group of users who substantially contribute answers for a long period. The size of this core does not grow in proportion to the community size, which causes the <em>size dependent distribution</em>, which in turn causes <em>diseconomies</em>–ratio of answer to question declines with the increase in community size.</h5>
                     <br>
                     <figure class="figure">
                         <img src="../images/Android_SDD.png" class="center-block" width="75%" alt="Missing figure for size dependent distribution.">
                         <br>
-                        <figcaption><h5><strong>Figure 4:</strong> Size dependent distribution of user behavior in ANDROID community.</h5></figcaption>
+                        <figcaption><h5><strong>Figure 4:</strong> Size dependent distribution of answering behavior in ANDROID community. Users who join more recently are likely to contribute fewer answers compared to those who joined at an early stage.</h5></figcaption>
                     </figure>               
                 </div>
             </div>
@@ -143,11 +137,9 @@
         
         <div class="row">
             <div class="col-md-12">
-                <div class="all-title text-center">
-                    <h2>RESOURCES</h2>
-                </div>
+                <h1>Resources</h1>
                 <div class="title-para" style="background-color:Gainsboro;padding:10px;">
-                    <h5>BibTex:<br>
+                    <h5><strong>BibTex:<strong><br>
                     @inproceedings{DevWWW18,<br>
                     author = {Dev, Himel and Geigle, Chase and Hu, Qingtao and Zheng, Jiahui and Sundaram, Hari},<br>
                     title     = {The Size Conundrum: Why Online Knowledge Markets Can Fail at Scale},<br>
