@@ -2,7 +2,13 @@
 body{font-family: 'Slabo 27px', sans-serif;font-size:15px}
 body b{font-family: 'Slabo 27px', sans-serif;color:#2477C4;font-weight:400}
 
-
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
 
 .all-title.text-center > h2 {
